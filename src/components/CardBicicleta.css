@@ -1,17 +1,24 @@
 .card-bicicleta {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 280px;
 }
 
 .card-bicicleta img {
-    width: 280px;
-    border-radius: 4px;
+    width: 100%;
+    border-radius: 3px;
 }
 
-.modelo {
-    color: #2e2e2e;
+.card-bicicleta .modelo {
+    color: #2c2c2c;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
 }
 
-.preco {
+.card-bicicleta .preco {
     color: #595959;
-    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
 }

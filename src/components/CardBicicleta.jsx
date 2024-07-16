@@ -1,25 +1,12 @@
-import './CardBicicleta.css'
+import '../components/CardBicicleta.css'
 
-function CardBicicleta() {
-
-    function comprarBike() {
-        console.log('comprando a bicicleta')
-    }
-
-    // function teclaPressionada(e) {
-
-    // }
-
+function CardBicicleta({ nomeModelo, preco, imgSrc }) {
     return (
         <>
             <div className="card-bicicleta">
-                <img src="https://www.origamid.com/projetos/bikcraft/img/bicicletas/magic-home.jpg" alt="Imagem da bike" />
-                <h4 className='modelo'>Magic Might</h4>
-                <h6 className='preco'>R$ 2499</h6>
-
-                {/* <input type='text' placeholder='Digite aqui' onChange={(e) => teclaPressionada(e)}></input> */}
-
-                <button onClick={() => comprarBike()}>Comprar</button>
+                <img src={imgSrc} alt="Imagem do modelo da bike" />
+                <span className="modelo">{nomeModelo}</span>
+                <span className="preco">R$ {preco}</span>
             </div>
         </>
     )
